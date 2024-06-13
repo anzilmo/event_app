@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{%load static %}
+{%block title%}
+Event
+{% endblock %}
+
+        {%block content%}
+        <h2 class="text-center">Events</h2>
+   <div class="container">
+        {% for i in eve %}
+        <div class="card" style="width: 13rem;display:inline-block;margin: 50px;">
+                <img src="{{i.img.url}}" class="card-img-top" alt="..." height="300px" width="200px">
+                <div class="card-body">
+                  <h5 class="card-title">{{i.name}}</h5>
+                  <p class="card-text"> {{i.desc}}</p>
+                </div>
+              </div>
+              {% endfor %}
+              <!-- <div class="card" style="width: 18rem;">
+                <img src="{% static 'image/se.jpeg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Best option for your Events......! join with us...</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="{% static 'image/se.jpeg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Best option for your Events......! join with us...</a>
+                </div>
+              </div> -->
+
+
+
+   </div>
+
+     {% endblock %}

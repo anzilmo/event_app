@@ -1,0 +1,36 @@
+<!-- templates/log.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Login</div>
+        <div class="content">
+            <form action="{% url 'login' %}" method="post">
+                {% csrf_token %}
+                <div class="user-details">
+                    <div class="input-box">
+                        <label>User Name: </label>
+                        <input type="text" name="username" required>
+                    </div>
+                    <div class="input-box">
+                        <label>Password: </label>
+                        <input type="password" name="password" required>
+                    </div>
+                </div>
+                <div class="button">
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
