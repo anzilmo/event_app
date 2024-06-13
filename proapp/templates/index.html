@@ -9,10 +9,10 @@ Home
 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="{% static '/image/fs.jpg'%}" class="d-block w-100" alt="...">
+        <img src="{% static '/image/six.webp'%}" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="{% static '/image/for.jpeg'%}" class="d-block w-100" alt="...">
+        <img src="{%static '/image/seven.webp'%}" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
         <img src="{% static '/image/tr.jpg'%}" class="d-block w-100" alt="...">
@@ -27,6 +27,16 @@ Home
       <span class="visually-hidden">Next</span>
     </button>
   </div> 
+
+
+
+
+
+
+
+
+
+
   <Style>
     /* General Footer Styles */
 .footer-section {
@@ -115,9 +125,104 @@ Home
     display: table-cell; /* Table cell display */
     vertical-align: middle; /* Vertical align middle */
 }
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-text {
+    color: #fff;
+    text-align: left;
+}
+
+.hero-text span {
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.hero-text h2 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.hero-text .primary-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #ff6b6b;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.hero-text .primary-btn:hover {
+    background-color: #ff4b4b;
+}
+
+.hero-section img {
+    max-width: 100%;
+    height: auto;
+}
+
 
   </Style>
-
+<section class="hero-section set-bg" data-setbg="img/hero.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="hero-text">
+                    <span>5 to 9 may 2025, baga beach, goa</span>
+                    <h2>Change Your Mind<br />sunday party in goa</h2>
+                    <a href=" {% url 'booking'%}" class="primary-btn">Buy Ticket</a>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <img src="{% static '/image/goa.jpg'%}" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="hero-section set-bg" data-setbg="img/hero.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="hero-text">
+                    <span>5 to 9 may 2024, mardavall hotel, New York</span>
+                    <h2>Change Your Mind<br /> Travis scott conpesat</h2>
+                    <a href=" {% url 'booking'%}" class="primary-btn">Buy Ticket</a>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <img src="{%static '/image/travis.jpg'%}" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="hero-section set-bg" data-setbg="img/hero.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="hero-text">
+                    <span>5 to 9 may 2019, mardavall hotel, New York</span>
+                    <h2>Change Your Mind<br /> To Become Sucess</h2>
+                    <a href=" {% url 'booking'%}" class="primary-btn">Buy Ticket</a>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <img src="{%static '/image/ete.webp'%}" alt="">
+            </div>
+        </div>
+    </div>
+</section>
 
 
   <footer class="footer-section">
